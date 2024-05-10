@@ -1,0 +1,37 @@
+@charset "UTF_8";
+
+body {
+    font: normal 1em Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: darkred;
+}
+
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+}
+
+.especial {
+    background-color: rgb(225, 140, 140);
+}
+
+.especial::before {
+    content: '» ';
+}
+
+.especial::after {
+    content: ' «';
+}

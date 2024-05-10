@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+body {
+    font: 1em "Kaushan Script", sans-serif;
+    background-image: linear-gradient(to top, #F29F80, #F29F80);
+    margin: 0px;
+}
+header {
+    background-color: #F26363;
+    padding: 10px;
+    margin: 10px;
+}
+header > h1 {
+    color: #171559;
+    font-size: 2em;
+}
+nav {
+    background-color: #D94169;
+    padding: 3px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+
+}
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 30px;
+}
+nav > a:hover {
+    text-decoration: underline;
+}
+main {
+    background-color: #F26363;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 0px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+}
+section > p {
+    color: #171559;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+article{
+    background-color: #F29F80;
+    padding: 5px;
+    color: white;
+}
+article > h2 {
+    color: #171559;
+}
+article > p {
+    color: white
+    
+}
+article > aside {
+    background-color: #F26363;
+    color: #171559;
+
+}
+footer {
+    background-color: #D94169;
+    color: white;
+    text-align: center;
+    padding: 4px;
+}
+footer > p {
+    margin: 0px;
+}
