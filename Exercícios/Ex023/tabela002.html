@@ -9,7 +9,7 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         caption {
-            background-color: rgb(236, 236, 236);
+            background-color: lightgray;
             text-align: center;
             font-weight: bolder;
             font-size: 1.5em;
@@ -17,15 +17,29 @@
         }
         table {
             width: 600px;
-            border-collapse: collapse;
+            border-collapse: collapse;position: relative;
         }
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+        tbody tr:nth-child(even) {
+            background-color: lightgray;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: white;
+        }
+        th#populacao {
+            width: 100px;
         }
         td.num {
             text-align: right;
@@ -40,8 +54,8 @@
         </caption>
         <thead>
            <tr>
-               <th>Estado</th>
-               <th>População</th>
+               <th scope="col">Estado</th>
+               <th scope="col" id="populacao">População</th>
            </tr>
         </thead>
         <tbody>
@@ -156,10 +170,16 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total</th>
+                <th scope="row">Total</th>
                 <td class="num"><strong>203.078.389</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit odit vero maiores voluptatum natus architecto, minus eos modi dolores aspernatur blanditiis debitis quae eius assumenda laborum dolorem quisquam! At, sint. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque omnis labore magnam odio necessitatibus officiis laborum ducimus incidunt autem vel totam, suscipit repudiandae enim ut quod aliquam eligendi cumque nemo? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam itaque cumque velit? Voluptates dolor atque commodi reprehenderit molestiae reiciendis quae, voluptas id! Corporis, esse fuga exercitationem magnam maiores obcaecati soluta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quibusdam commodi corrupti voluptatem suscipit fugiat architecto enim accusamus in et sint tenetur repudiandae dicta odio incidunt laborum, deleniti deserunt neque?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit odit vero maiores voluptatum natus architecto, minus eos modi dolores aspernatur blanditiis debitis quae eius assumenda laborum dolorem quisquam! At, sint. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque omnis labore magnam odio necessitatibus officiis laborum ducimus incidunt autem vel totam, suscipit repudiandae enim ut quod aliquam eligendi cumque nemo? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam itaque cumque velit? Voluptates dolor atque commodi reprehenderit molestiae reiciendis quae, voluptas id! Corporis, esse fuga exercitationem magnam maiores obcaecati soluta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quibusdam commodi corrupti voluptatem suscipit fugiat architecto enim accusamus in et sint tenetur repudiandae dicta odio incidunt laborum, deleniti deserunt neque?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit odit vero maiores voluptatum natus architecto, minus eos modi dolores aspernatur blanditiis debitis quae eius assumenda laborum dolorem quisquam! At, sint. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque omnis labore magnam odio necessitatibus officiis laborum ducimus incidunt autem vel totam, suscipit repudiandae enim ut quod aliquam eligendi cumque nemo? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam itaque cumque velit? Voluptates dolor atque commodi reprehenderit molestiae reiciendis quae, voluptas id! Corporis, esse fuga exercitationem magnam maiores obcaecati soluta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quibusdam commodi corrupti voluptatem suscipit fugiat architecto enim accusamus in et sint tenetur repudiandae dicta odio incidunt laborum, deleniti deserunt neque?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit odit vero maiores voluptatum natus architecto, minus eos modi dolores aspernatur blanditiis debitis quae eius assumenda laborum dolorem quisquam! At, sint. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque omnis labore magnam odio necessitatibus officiis laborum ducimus incidunt autem vel totam, suscipit repudiandae enim ut quod aliquam eligendi cumque nemo? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam itaque cumque velit? Voluptates dolor atque commodi reprehenderit molestiae reiciendis quae, voluptas id! Corporis, esse fuga exercitationem magnam maiores obcaecati soluta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quibusdam commodi corrupti voluptatem suscipit fugiat architecto enim accusamus in et sint tenetur repudiandae dicta odio incidunt laborum, deleniti deserunt neque?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit odit vero maiores voluptatum natus architecto, minus eos modi dolores aspernatur blanditiis debitis quae eius assumenda laborum dolorem quisquam! At, sint. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque omnis labore magnam odio necessitatibus officiis laborum ducimus incidunt autem vel totam, suscipit repudiandae enim ut quod aliquam eligendi cumque nemo? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam itaque cumque velit? Voluptates dolor atque commodi reprehenderit molestiae reiciendis quae, voluptas id! Corporis, esse fuga exercitationem magnam maiores obcaecati soluta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quibusdam commodi corrupti voluptatem suscipit fugiat architecto enim accusamus in et sint tenetur repudiandae dicta odio incidunt laborum, deleniti deserunt neque?</p>
+
 </body>
 </html>
